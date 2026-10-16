@@ -1,0 +1,14 @@
+# User-generated audio and local memo data
+*.wav
+memo_list.txt
+
+# Local builds and binaries
+*.exe
+*.dll
+*.o
+*.obj
+
+# Editor / OS generated
+.vscode/
+.DS_Store
+Thumbs.db
