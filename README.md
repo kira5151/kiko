@@ -113,7 +113,7 @@ MSYS2 UCRT64を使って開発を進める中で、ライブラリの導入や�
 ### すでにビルドされた実行ファイルを使う場合
 
 1. `kiko.exe`、`SDL2.dll`、`SDL2_ttf.dll` を同じフォルダに配置します。
-2. 有効な日本語フォント `NotoSansJP-Regular.ttf` を同じフォルダに配置します。フォントがない場合は、コード上ではWindowsの `C:/Windows/Fonts/meiryo.ttc` にフォールバックします。
+2. 日本語表示にはフォントが必要です。コードでは `NotoSansJP-Regular.ttf` を読み込めない場合、Windowsの `C:/Windows/Fonts/meiryo.ttc` を使用するよう設定しています。メイリオが利用できる環境で起動してください。
 3. マイクを利用できる環境で `kiko.exe` を起動します。
 
 ### ソースコードからビルドする場合
