@@ -133,21 +133,23 @@ gcc main.c -o kiko.exe $(pkg-config --cflags --libs sdl2 SDL2_ttf) -mconsole
 
 > **注意：** 添付ZIPに含まれる `NotoSansJP-Regular.ttf` は0バイトでした。フォントファイルを別途正しく用意するか、Windowsのメイリオを利用してください。また、上記の環境構築・ビルド手順はこの環境で実行検証していません。
 
-## 📁 ファイル構成（提供されたZIP）
+## 📁 ファイル構成
 
 ```text
-kiko-main/
-├── main.c               # アプリ本体
-├── kiko.exe             # Windows実行ファイル
-├── SDL2.dll             # SDL2ランタイム
-├── SDL2_ttf.dll         # 文字表示用ランタイム
-├── NotoSansJP-Regular.ttf # フォント（ZIP内は0バイト）
-├── memo_list.txt        # メモ一覧の保存先
-├── recorded.wav         # 録音データ
-└── preview.wav          # 音声効果のプレビュー
+kiko/
+├── main.c          # アプリケーション本体
+├── main.png        # アプリ画面のスクリーンショット
+├── README.md       # プロジェクトの説明
+├── .gitignore      # Git管理対象外ファイルの設定
+├── kiko.exe        # Windows実行ファイル
+├── SDL2.dll        # SDL2ランタイム
+├── SDL2_ttf.dll    # 日本語表示用ライブラリ
+└── memo_list.txt   # メモ一覧データ（現在は空ファイル）
 ```
 
-録音内容を公開したくない場合、`recorded.wav`、`preview.wav`、`audio*.wav`、`memo_list.txt` はGit管理から除外することを推奨します。
+録音データ（`recorded.wav`、`preview.wav`、`audio*.wav`）はプライバシー保護のためリポジトリに含めていません。
+
+`.gitignore` により、今後生成される音声データやローカルのビルド成果物などをGit管理の対象外にしています。すでに追跡されているファイルには別途対応が必要です。
 
 ## 📈 今後の改善
 
