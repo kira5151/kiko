@@ -131,7 +131,7 @@ gcc main.c -o kiko.exe $(pkg-config --cflags --libs sdl2 SDL2_ttf) -mconsole
 ./kiko.exe
 ```
 
-> **注意：** 添付ZIPに含まれる `NotoSansJP-Regular.ttf` は0バイトでした。フォントファイルを別途正しく用意するか、Windowsのメイリオを利用してください。また、上記の環境構築・ビルド手順はこの環境で実行検証していません。
+> **注意：** 上記の環境構築・ビルド手順は、別のWindows環境では動作検証していません。
 
 ## 📁 ファイル構成
 
